@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="grand-titre">Indiquez vos renseignements personnels.</h1>
+        <p>Il est recommandé d'indiquer au moins l'adresse nom, prénom, adresse et e-mail</p>
+    </div>
+    <div class="content">
+        <div class="profil">
+            <img src="profil" [src]="urllink" class="photo-profil"/>
+            <input type="file" class="btn btn-success" (change)="selectFile($event)" />
+            <!-- <button mat-raised-button>Télécharger une photo</button> -->
+        </div>
+        <div class="formulaire">
+            <form class="example-form">
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <mat-label>Nom</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <mat-label>Prénom</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+    
+                <p>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Adress</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Date de naissance</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Contact</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </p>
+                <button mat-raised-button routerLink="/information">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <router-outlet></router-outlet> -->
+
+</body>
+
+</html>

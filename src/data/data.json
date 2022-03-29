@@ -1,0 +1,36 @@
+    {
+        "nom": "",
+        "prenom": "",
+        "adress": "",
+        "email": "",
+        "ddn": "",
+        "contact": "1",
+        "information" : [
+            {
+                "A_propos" : ""
+            },
+
+            {
+                "competence": []
+            },
+
+            {
+                "Divertissements": []
+            },
+
+            {
+                "experiences": []
+            },
+
+            {
+                "titre_du_poste": ""
+            },
+
+            {
+                "description_du_projet": []
+            }
+        ],
+        
+        "formations":  []
+
+    }
